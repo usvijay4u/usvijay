@@ -120,6 +120,40 @@
       .nav-links.open { display: flex; }
       .nav-links a { padding: .75rem .5rem; }
       .whatsapp-float span { display: none; }
+    .faq-container{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .faq-left{
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .faq-right{
+        width: 100%;
+        position: static;   /* Disable sticky on mobile */
+        text-align: center;
+    }
+
+    .faq-right img{
+        width: 80%;
+        max-width: 320px;
+    }
+
+    .faq-item{
+        padding:18px;
+    }
+
+    .faq-item h3{
+        font-size:20px;
+    }
+
+    .faq-item p{
+        font-size:16px;
+        line-height:1.6;
+    }
+
     }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
@@ -179,47 +213,7 @@
     box-shadow:0 15px 40px rgba(0,0,0,.15);
 
 }
-	  /* =========================
-   Mobile View
-   ========================= */
 
-@media (max-width: 768px){
-
-    .faq-container{
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .faq-left{
-        width: 100%;
-        padding-right: 0;
-    }
-
-    .faq-right{
-        width: 100%;
-        position: static;   /* Disable sticky on mobile */
-        text-align: center;
-    }
-
-    .faq-right img{
-        width: 80%;
-        max-width: 320px;
-    }
-
-    .faq-item{
-        padding:18px;
-    }
-
-    .faq-item h3{
-        font-size:20px;
-    }
-
-    .faq-item p{
-        font-size:16px;
-        line-height:1.6;
-    }
-
-}
   </style>
 </head>
 <body>
