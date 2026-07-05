@@ -125,6 +125,60 @@
       html { scroll-behavior: auto; }
       * { transition: none !important; }
     }
+	.faq-container{
+
+    display:flex;
+    gap:60px;
+
+    max-width:1200px;
+    margin:auto;
+
+}
+
+.faq-left{
+
+    flex:1;
+
+    height:90vh;
+
+    overflow-y:auto;
+
+    padding-right:20px;
+
+}
+
+/* Hide scrollbar (optional) */
+
+.faq-left::-webkit-scrollbar{
+    width:8px;
+}
+
+.faq-left::-webkit-scrollbar-thumb{
+    background:#ccc;
+    border-radius:10px;
+}
+
+.faq-right{
+
+    width:420px;
+
+    position:sticky;
+
+    top:100px;
+
+    align-self:flex-start;
+
+}
+
+.faq-right img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
   </style>
 </head>
 <body>
@@ -149,6 +203,7 @@
         <a href="#programming" data-nav>Programming</a>
         <a href="#reviews" data-nav>Reviews</a>
         <a href="#contact" data-nav>Book Trial</a>
+        <a href="#faq" data-nav>FAQ</a>
       </nav>
       <div class="nav-actions">
         <button class="theme-toggle" data-theme-toggle aria-label="Switch theme">
@@ -246,7 +301,7 @@
 
     <section id="ap-csa" class="page" aria-labelledby="ap-title">
       <div class="container page-hero">
-        <span class="eyebrow">Page 2 · AP CSA</span>
+        <!-- <span class="eyebrow">Page 2 · AP CSA</span> -->
         <h1 id="ap-title">Dedicated AP CSA tutoring for students who want stronger Java understanding and better exam confidence.</h1>
         <p>This page gives AP CSA a premium standalone focus so parents and students can immediately see that this is not a generic “all subjects” tutoring site.</p>
       </div>
@@ -277,7 +332,7 @@
 
     <section id="programming" class="page" aria-labelledby="prog-title">
       <div class="container page-hero">
-        <span class="eyebrow">Page 3 · Programming</span>
+        <!-- <span class="eyebrow">Page 3 · Programming</span> -->
         <h1 id="prog-title">Structured tutoring in Java, Python, C/C++, and Data Structures.</h1>
         <p>This section supports high-school, college, and beginner learners who need reliable one-on-one instruction in core programming subjects.</p>
       </div>
@@ -292,7 +347,7 @@
 
     <section id="reviews" class="page" aria-labelledby="reviews-title">
       <div class="container page-hero">
-        <span class="eyebrow">Page 4 · Reviews</span>
+        <!-- <span class="eyebrow">Page 4 · Reviews</span> -->
         <h1 id="reviews-title">Trusted by students and appreciated by parents.</h1>
         <p>Testimonials matter because they help new families evaluate teaching style, reliability, and academic strength before sending an inquiry.</p>
       </div>
@@ -312,7 +367,7 @@
 
     <section id="contact" class="page" aria-labelledby="contact-title">
       <div class="container page-hero">
-        <span class="eyebrow">Page 5 · Contact</span>
+        <!-- <span class="eyebrow">Page 5 · Contact</span> -->
         <h1 id="contact-title">Book a trial lesson or message directly.</h1>
         <p>The contact experience is intentionally simple: email, WhatsApp, TeacherOn, or a quick inquiry form.</p>
       </div>
@@ -345,22 +400,61 @@
           </article>
         </div>
       </section>
-      <section>
-        <div class="container split">
-          <article class="card">
-            <span class="mini-label">FAQ</span>
-            <h2>Common questions</h2>
-            <div class="faq-item"><h3>Do you teach US-Hours?</h3><p class="muted">Yes. Majority of my students are from US, so my schedule maps those mostly.</p></div>
-            <div class="faq-item"><h3>Do you teach beginners?</h3><p class="muted">Yes. Beginners are welcome, especially in Java and Python foundations.</p></div>
-            <div class="faq-item"><h3>Can you help with AP CSA specifically?</h3><p class="muted">Yes. AP Computer Science A is one of the main offers on this site.</p></div>
-            <div class="faq-item"><h3>Do you support coursework and assignments?</h3><p class="muted">Yes, with an emphasis on understanding the concepts behind the work.</p></div>
-            <div class="faq-item"><h3>How are sessions conducted?</h3><p class="muted">Sessions are held on Zoom. During class, the work is written clearly in a notepad-style document, and the final file is shared with the student by email after the session.</p></div>
-          </article>
-          <article class="pricing-hero">
-			<img src="me.jpg" alt="Uma Shankar Vijay professional photo" style="width:100%;max-width:420px;border-radius:1.5rem;border:1px solid var(--border);box-shadow:var(--shadow-md);object-fit:cover;margin-bottom:1rem;" />          </article>
-        </div>
-      </section>
     </section>
+
+
+
+<section id="faq" class="page">
+
+    <div class="faq-container">
+
+        <!-- Left Side -->
+        <div class="faq-left">
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>Do you teach US Hours?</h3>
+                <p>Yes. Most of my students are from the USA, so I schedule classes according to US time zones.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Do you teach beginners?</h3>
+                <p>Yes. Beginners are welcome, especially in Java and Python.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can you help with AP CSA specifically?</h3>
+                <p>Absolutely. AP Computer Science A is one of my core specializations.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Do you support coursework and assignments?</h3>
+                <p>Yes, while ensuring students understand the concepts rather than just completing the work.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How are sessions conducted?</h3>
+                <p>Classes are conducted on Zoom using digital notes, which are shared after every session.</p>
+            </div>
+
+            <!-- Add more questions -->
+            <!-- Repeat FAQ items -->
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="faq-right">
+
+            <img src="me.jpg" alt="Uma Shankar Vijay">
+
+        </div>
+
+    </div>
+
+</section>
+
+
   </main>
 
   <a class="whatsapp-float" href="https://wa.me/919829027727" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
